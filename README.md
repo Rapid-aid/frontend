@@ -1,2 +1,2 @@
-# frontend
-Front-End for RapidAid
+# RapidAid - Front-end
+Front-end for RapidAid
