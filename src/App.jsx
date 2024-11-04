@@ -1,5 +1,5 @@
 import rapidAidLogo from '/logo.svg'
-import './App.css'
+import '../src/App.css'
 
 function App() {
 
