@@ -27,7 +27,7 @@ function NavDesktop() {
                     {isVisible ? <ExpandLess /> : <ExpandMore />} 
                 </div>
                 {isVisible && (
-                    <div className="top-[60px] right-0 z-[1] absolute bg-white shadow-xl p-2 rounded-lg profileDropdown">
+                    <div className="sm:block top-[60px] right-0 z-30 absolute hidden bg-white shadow-xl p-2 rounded-lg profileDropdown">
                     <ul>
                         <li className="flex items-center gap-2 hover:bg-neutral-200 px-3 p-2 rounded-lg hover:text-black cursor-pointer"><AccountCircleOutlined />Mój profil</li>
                         <li className="flex items-center gap-2 hover:bg-neutral-200 px-3 p-2 rounded-lg hover:text-black cursor-pointer"><SettingsOutlined />Ustawienia</li>

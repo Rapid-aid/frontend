@@ -1,20 +1,24 @@
 import '../index.css'
 import Header from '../components/Layout/Header.jsx'
 import Sidebar from '../components/Dashboard/Sidebar.jsx'
-import Map from '../components/Dashboard/Map.jsx'
+import MapContainer from '../components/Dashboard/Map/MapContainer.jsx'
 import NavMobile from '../components/Layout/NavMobile.jsx'
+import Controls from '../components/Dashboard/Controls.jsx'
 
 function Dashboard() {
     return (
-        <>
+        <div className="flex flex-col min-h-screen">
         <Header />
-        <div className="flex grow">
+        <div className="relative flex grow">
             <Sidebar />
-            <Map />
+            <div className="relative flex-grow">
+            <MapContainer />
+            <Controls />
+            </div>
         </div>
         <NavMobile />
-        </>
-    )
+    </div>
+    );
 }
 
 export default Dashboard
